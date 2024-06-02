@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "clockicons";
+  src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot");
+  src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.svg#clockicons")
+      format("svg");
+}
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #282c35;
+  color: #fff;
+}
+/* css bg css */
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #111a22; */
+}
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ac80e7;
+  overflow: hidden;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #ffacac;
+  top: 72%;
+  left: 17%;
+  animation-duration: 30s;
+  animation-delay: -28s;
+  transform-origin: 4vw 15vh;
+  box-shadow: 40vmin 0 5.376107220714183vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #583c87;
+  top: 31%;
+  left: 13%;
+  animation-duration: 17s;
+  animation-delay: -3s;
+  transform-origin: 15vw 9vh;
+  box-shadow: -40vmin 0 5.2964999627381575vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #ffacac;
+  top: 81%;
+  left: 51%;
+  animation-duration: 50s;
+  animation-delay: -3s;
+  transform-origin: 2vw -19vh;
+  box-shadow: 40vmin 0 5.345381065164873vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #e45a84;
+  top: 48%;
+  left: 36%;
+  animation-duration: 19s;
+  animation-delay: -17s;
+  transform-origin: -22vw 12vh;
+  box-shadow: -40vmin 0 5.993081235635652vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #ffacac;
+  top: 22%;
+  left: 7%;
+  animation-duration: 30s;
+  animation-delay: -13s;
+  transform-origin: -9vw 21vh;
+  box-shadow: -40vmin 0 5.723384550411242vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #e45a84;
+  top: 34%;
+  left: 67%;
+  animation-duration: 16s;
+  animation-delay: -26s;
+  transform-origin: 11vw 13vh;
+  box-shadow: -40vmin 0 5.124103906583974vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #583c87;
+  top: 16%;
+  left: 61%;
+  animation-duration: 38s;
+  animation-delay: -24s;
+  transform-origin: -2vw -5vh;
+  box-shadow: -40vmin 0 5.641004615952827vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #583c87;
+  top: 67%;
+  left: 67%;
+  animation-duration: 32s;
+  animation-delay: -24s;
+  transform-origin: -11vw -12vh;
+  box-shadow: 40vmin 0 5.551670949153697vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #e45a84;
+  top: 62%;
+  left: 64%;
+  animation-duration: 10s;
+  animation-delay: -31s;
+  transform-origin: -20vw -6vh;
+  box-shadow: -40vmin 0 5.926419839473623vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #583c87;
+  top: 94%;
+  left: 19%;
+  animation-duration: 37s;
+  animation-delay: -42s;
+  transform-origin: -22vw 19vh;
+  box-shadow: 40vmin 0 5.005855642105107vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #e45a84;
+  top: 48%;
+  left: 78%;
+  animation-duration: 8s;
+  animation-delay: -15s;
+  transform-origin: -9vw 23vh;
+  box-shadow: -40vmin 0 5.1010985050586655vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #ffacac;
+  top: 54%;
+  left: 12%;
+  animation-duration: 31s;
+  animation-delay: -42s;
+  transform-origin: 16vw -8vh;
+  box-shadow: 40vmin 0 5.336428064153995vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #583c87;
+  top: 23%;
+  left: 87%;
+  animation-duration: 28s;
+  animation-delay: -32s;
+  transform-origin: -13vw 22vh;
+  box-shadow: 40vmin 0 5.530847588575398vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #583c87;
+  top: 45%;
+  left: 64%;
+  animation-duration: 35s;
+  animation-delay: -47s;
+  transform-origin: 15vw -1vh;
+  box-shadow: -40vmin 0 5.4987372452413865vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #583c87;
+  top: 49%;
+  left: 68%;
+  animation-duration: 34s;
+  animation-delay: -30s;
+  transform-origin: -5vw -3vh;
+  box-shadow: 40vmin 0 5.795080110653125vmin currentColor;
+}
+.background span:nth-child(15) {
+  color: #583c87;
+  top: 7%;
+  left: 93%;
+  animation-duration: 47s;
+  animation-delay: -36s;
+  transform-origin: -13vw -3vh;
+  box-shadow: -40vmin 0 5.432560970608567vmin currentColor;
+}
+.background span:nth-child(16) {
+  color: #583c87;
+  top: 21%;
+  left: 76%;
+  animation-duration: 11s;
+  animation-delay: -23s;
+  transform-origin: 9vw 3vh;
+  box-shadow: 40vmin 0 5.414708564652115vmin currentColor;
+}
+.background span:nth-child(17) {
+  color: #ffacac;
+  top: 43%;
+  left: 26%;
+  animation-duration: 54s;
+  animation-delay: -15s;
+  transform-origin: -7vw 13vh;
+  box-shadow: 40vmin 0 5.373196118947444vmin currentColor;
+}
+.background span:nth-child(18) {
+  color: #e45a84;
+  top: 47%;
+  left: 47%;
+  animation-duration: 23s;
+  animation-delay: -35s;
+  transform-origin: 10vw -9vh;
+  box-shadow: -40vmin 0 5.999068022912305vmin currentColor;
+}
+.background span:nth-child(19) {
+  color: #e45a84;
+  top: 89%;
+  left: 18%;
+  animation-duration: 8s;
+  animation-delay: -18s;
+  transform-origin: 16vw 23vh;
+  box-shadow: -40vmin 0 5.965193925056332vmin currentColor;
+}
+
+/* css inti */
+.card {
+  z-index: 1;
+  background: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.countdown-container {
+  text-align: center;
+}
+
+#countdown {
+  font-size: 3em;
+  margin-top: 20px;
+  color: #61dafb;
+}
+#time {
+  font-family: "clockicons";
+  margin-top: 20px;
+  color: #61dafb;
+  text-shadow: 2px 2px 2px black;
+}
+#textAlert {
+  color: #61dafb;
+  text-shadow: 2px 2px 2px black;
+}
+#testButton {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#testButton:hover {
+  background-color: #4fa3d1;
+}
